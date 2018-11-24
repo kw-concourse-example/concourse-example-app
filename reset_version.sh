@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # flush local tags for a clean state with fetch
+git pull
 git tag -d $(git tag -l)
 git fetch
 # delete remote tags
